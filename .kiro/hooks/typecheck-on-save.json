@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Type-check on TypeScript save",
+      "trigger": "PostFileSave",
+      "description": "Runs tsc --noEmit after .ts/.tsx files are saved.",
+      "matcher": "\\.(ts|tsx)$",
+      "action": {
+        "type": "command",
+        "command": "npm run typecheck",
+        "timeout": 120
+      }
+    }
+  ]
+}

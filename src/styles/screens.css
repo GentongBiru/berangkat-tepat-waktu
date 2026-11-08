@@ -1,0 +1,195 @@
+/* Pet Saya and Riwayat. */
+
+/* ---------- Pet Saya ---------- */
+
+.pet-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pet-hero__stage {
+  font-size: 1.6rem;
+  margin: var(--space-2) 0 var(--space-1);
+}
+
+.pet-hero__xp {
+  width: 100%;
+  max-width: 320px;
+}
+
+.pet-hero__streak {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+  padding: var(--space-2) var(--space-3);
+  border-radius: 999px;
+  background: var(--amber-100);
+  color: #5c3d00;
+}
+
+.stage-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stage-list__item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+}
+
+.stage-list__item + .stage-list__item {
+  margin-top: var(--space-1);
+}
+
+.stage-list__item--current {
+  background: var(--blue-50);
+  box-shadow: inset 0 0 0 2px var(--blue-600);
+}
+
+.stage-list__name {
+  font-weight: 700;
+}
+
+.badge-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.badge {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--border);
+  background: var(--bg);
+}
+
+.badge--earned {
+  background: var(--amber-100);
+  border-color: var(--amber-500);
+}
+
+.badge__icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--ink-500);
+  color: var(--ink-600);
+}
+
+.badge--earned .badge__icon {
+  border-color: var(--amber-700);
+  color: #5c3d00;
+}
+
+.badge p {
+  margin: 0;
+}
+
+.badge__name {
+  font-weight: 800;
+}
+
+.badge__status {
+  font-weight: 600;
+}
+
+.badge__hint {
+  font-size: 0.9rem;
+}
+
+/* ---------- Riwayat ---------- */
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.stat {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+.stat__label {
+  margin: 0;
+  color: var(--ink-600);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.stat__value {
+  margin: var(--space-1) 0 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.stats__note {
+  grid-column: 1 / -1;
+  margin: calc(-1 * var(--space-1)) 0 0;
+  color: var(--ink-600);
+  font-size: 0.85rem;
+}
+
+.history-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.history-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+}
+
+.history-item p {
+  margin: 0 0 var(--space-1);
+}
+
+.history-item__top {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-1);
+  color: var(--ink-600);
+  font-size: 0.9rem;
+}
+
+.history-item__xp {
+  color: var(--ink-900);
+  font-size: 1.05rem;
+}
+
+.history-item__meta {
+  font-size: 0.9rem;
+}
+
+.history-item__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}

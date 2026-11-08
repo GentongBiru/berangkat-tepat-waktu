@@ -1,0 +1,41 @@
+/* Design tokens. Original palette: blue primary, warm neutrals, amber accent, teal done, rose late. */
+:root {
+  --blue-50: #eff6ff;
+  --blue-100: #dbeafe;
+  --blue-600: #1d4ed8;
+  --blue-700: #1e40af;
+
+  --ink-900: #1b2236;
+  --ink-600: #4a5468;
+  --ink-300: #c5cad6; /* decoration only: never the sole boundary of a control or a meaningful icon */
+  --ink-500: #6b7385; /* control borders and neutral state icons: 4.5:1 on white, 3:1 or more on every surface */
+
+  --bg: #faf8f4;
+  --surface: #ffffff;
+  --border: #e6e2d9;
+
+  --amber-100: #fef3c7;
+  --amber-500: #d99a06; /* decoration only */
+  --amber-700: #8a5a00; /* amber that carries meaning (pending mark, earned badge icon, focus ring) */
+  --teal-100: #ccf1ec;
+  --teal-600: #0f7c70;
+  --rose-100: #fde2e4;
+  --rose-600: #b4233a;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  --tap-min: 48px;
+  --font-base: 16px;
+  --font-stack: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --focus-ring: 3px solid var(--amber-700);
+}
